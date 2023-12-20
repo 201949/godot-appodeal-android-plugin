@@ -248,7 +248,8 @@ public class AppodealPlugin extends GodotPlugin {
 
     @UsedByGodot
     public String[] getNetworks(int adType) {
-        return Appodeal.getNetworks(godotActivity, getAndroidAdTypes(adType)).toArray(new String[0]);
+//        return Appodeal.getNetworks(godotActivity, getAndroidAdTypes(adType)).toArray(new String[0]);
+        return Appodeal.getNetworks().toArray(new String[0]);
     }
 
     @UsedByGodot
@@ -363,7 +364,8 @@ public class AppodealPlugin extends GodotPlugin {
 
     @UsedByGodot
     public void disableWebViewCacheClear() {
-        Appodeal.disableWebViewCacheClear();
+//        Appodeal.disableWebViewCacheClear();
+        android.util.Log.d("AppodealGodot", "not implemented in SDK 3.2.0");
     }
 
     @UsedByGodot
